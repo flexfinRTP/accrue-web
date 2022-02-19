@@ -12,8 +12,8 @@ export const NavBar = () => {
 		<>
 			<ToastContainer />
 			<header
-				className="flex justify-around items-center py-3
-				border-b-2 border-gray-100 dark:border-gray-700"
+				className="flex justify-around items-center py-5
+				border-b-5 border-gray-100 dark:border-gray-700"
 			>
 				<nav>
 					<ul id="nav-list" className="flex flex-wrap items-center text-center">
@@ -23,8 +23,17 @@ export const NavBar = () => {
 						<li className={path === "/about" ? "active-nav" : "nav-item"}>
 							<Link href="/about">About</Link>
 						</li>
+						<li className={path === "/accrue" ? "active-nav" : "nav-item"}>
+							<Link href="/accrue">Accrue Financial</Link>
+						</li>
 						<li className={path === "/snapshot" ? "active-nav" : "nav-item"}>
 							<Link href="/snapshot">Snapshot</Link>
+						</li>
+						<li className={path === "/bluechip" ? "active-nav" : "nav-item"}>
+							<Link href="/bluechip">Blue-Chip Cryptos</Link>
+						</li>
+						<li className={path === "/buidl" ? "active-nav" : "nav-item"}>
+							<Link href="/buidl">Buidling Blockz</Link>
 						</li>
 						<li className={path === "/guestbook" ? "active-nav" : "nav-item"}>
 							<Link href="/guestbook">Guestbook</Link>
